@@ -1,11 +1,9 @@
 module uart_tx #(
-    parameter CLK_FREQ = 50_000_000,
-    parameter BAUD_RATE = 115200
+    parameter CLK_DIV = 4
 )(
     input wire clk,
-    input wire rst_n,
+    input wire [7:0] data,
+    input wire send,
+    output reg tex 
 );
 
-begin
-
-endmodule
